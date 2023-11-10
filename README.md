@@ -6,8 +6,10 @@ Easy to install with Ubuntu server 22.04
 Clone the repo with:
 `git clone https://github.com/zooteld/Discord-Python-Bot.git`
 
-Enter and install dependancies
-`cd Discord-Python-Bot && pip install -r requirements.txt`
+Enter the dir, make the memory dir and models dir, and install dependancies
+`cd Discord-Python-Bot && mkdir bot_memories models && pip install -r requirements.txt`
+
+Copy your model's 4 bit quanitized version into the `models` folder. should look something like `ggml-model-q4_0.gguf`.
 
 Make your .env file and edit it with nano
 `cp -r .env.example .env && nano .env`
